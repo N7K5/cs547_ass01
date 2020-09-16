@@ -1,0 +1,234 @@
+@keyframes hide_warning {
+    0%{top: -100px}
+    10%{top: 50px}
+    80%{top: 50px}
+    100%{top: -100px;}
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: lora;
+    text-align: center;
+}
+
+body {
+    background-color: #efefef;
+}
+
+form {
+    margin: 10px;
+    padding: 20px;
+}
+
+.input_field {
+    margin: 10px;
+    padding: 7px 10px;
+    border: solid 2px #000;
+    border-radius: 5px;
+    font-size: 150%;
+    width: 80%;
+}
+
+.input_field:active {
+    box-shadow: 4px 4px 6px gray;
+}
+
+.input_btn {
+    font-size: 170%;
+    padding: 8px;
+    background-color: #00eecc;
+    margin: 5px;
+    box-shadow: 3px 3px 2px gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input_btn2 {
+    font-size: 170%;
+    padding: 8px;
+    background-color: #eeaacc;
+    margin: 5px;
+    box-shadow: 3px 3px 2px gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#signup_form {
+    display: none;
+}
+
+.details_line {
+    font-size: 130%;
+}
+
+#page_title {
+    padding: 20px;
+    text-decoration: underline;
+}
+
+
+.failure {
+    padding: 10px;
+    width: 80%;
+    position: fixed;
+    left: 10%;
+    top: -100px;
+    font-size: 130%;
+    font-weight: bold;
+    border: solid;
+    border-radius: 8px;
+    margin: 5px;
+    box-shadow: 8px 8px 6px gray;
+
+    background-color:#ffcbc9;
+    opacity: .8;
+
+    animation-name: hide_warning;
+    animation-duration: 5s;
+}
+
+.success {
+    padding: 10px;
+    width: 80%;
+    position: fixed;
+    left: 10%;
+    top: -100px;
+    font-size: 130%;
+    font-weight: bold;
+    border: solid;
+    border-radius: 8px;
+    margin: 5px;
+    box-shadow: 8px 8px 6px gray;
+
+    background-color:#c5fad3;
+    opacity: .8;
+
+    animation-name: hide_warning;
+    animation-duration: 5s;
+}
+
+.searchbar {
+    padding: 10px;
+    font-size: 140%;
+    text-align: left;
+    padding-left: 15px;
+    border: solid 2px #3d3d3d;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 3px;
+    background-color: #d1d1d1;
+}
+
+.search_btn {
+    background-color: #3d3d3d;
+    color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+
+.header {
+    position: sticky;
+    top:0px;
+    width:100%;
+    padding: 20px;
+    background-color: #3d3d3d;
+    color: #fff;
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+.header::first-letter {
+    text-transform: uppercase;
+}
+
+.message_form {
+    position: fixed;
+    bottom: -30px;
+    padding-bottom: 50px;
+    width:97%;
+    background-color:#efefef;
+    border-radius: 10px 10px 0px 0px;
+    z-index: 2;
+}
+
+.home_btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    padding: 10px;
+    z-index: 3;
+    background-color: gray;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration:none;
+}
+
+.one_message {
+    /* border:solid; */
+    padding: 25px;
+    margin: 0px 10px;
+}
+
+.message_text {
+    padding: 10px 20px;
+    border: solid 2px;
+}
+.my_message {
+    float: right;
+    border-radius: 10px 10px 0px 10px;
+    background-color: #e4ffd9;
+}
+.his_message {
+    float: left;
+    border-radius: 10px 10px 10px 0px;
+    background-color: #cfe8fa;
+}
+
+.chatlist {
+    /* border: solid; */
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 230%;
+    background-color: #cdcdcd;
+    color:#000;
+    text-decoration: none;
+    border-radius: 10px;
+   
+}
+
+.chatlist::first-letter {
+    text-transform: uppercase;
+}
+
+.old_chat_title {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 230%;
+    /* background-color: #cdcdcd; */
+    color:#000;
+    text-decoration: underline;
+    border-radius: 10px;
+}
+
+.one_result {
+    border:solid;
+    font-size: 140%;
+    background-color: #3d3d3d;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin:5px;
+    text-decoration:none;
+}
+
+.new_chat_link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.new_chat_link::first-letter {
+    text-transform: uppercase;
+}
